@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dùng thử — colorburst</title>
+<meta name="description" content="Cách dùng thử colorburst từ USB mà không đụng đến ổ cứng, và những điều cần biết trước khi cài thật — kể cả hai chỗ dễ vấp.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <a class="brand" href="index.html">colorburst</a>
+  <a href="index.html">Trang chủ</a>
+  <a href="dung-thu.html" aria-current="page">Dùng thử</a>
+  <a href="so-sanh.html">So sánh</a>
+  <a href="hinh-anh.html">Hình ảnh</a>
+  <a href="hoi-dap.html">Hỏi đáp</a>
+</nav>
+<main>
+
+<h1>Dùng thử</h1>
+<p class="subtitle">Chạy từ USB trước, máy không suy suyển gì.
+Thấy hợp rồi hãy tính chuyện lâu dài.</p>
+
+<p>Có hai việc khác nhau, và nên tách bạch ngay từ đầu.
+<strong>Dùng thử</strong> là khởi động máy từ USB: colorburst chạy
+thẳng từ USB, ổ cứng của máy không bị đụng đến, rút USB ra là mọi thứ
+như cũ. <strong>Cài đặt</strong> là bước sau, khi bạn đã thấy hợp:
+nó xóa ổ đĩa được chọn và thay bằng colorburst. Trang này đi theo
+đúng thứ tự đó — thử trước, cưới sau.</p>
+
+<h2>Hai điều cần biết trước</h2>
+
+<p><strong>Thứ nhất, về Secure Boot.</strong> Phần lớn máy sẽ từ chối
+khởi động từ USB cho đến khi bạn tắt Secure Boot trong phần cài đặt
+UEFI/BIOS. Máy không hỏng, USB không lỗi — cánh cửa này vốn được khóa
+sẵn cho một vị khách duy nhất, và đây là chuyện bình thường với mọi
+hệ điều hành ngoài Windows. Cách vào: ngay khi bật máy, bấm liên tục
+phím F2, F10 hoặc Del (tùy hãng, màn hình đầu tiên thường ghi rõ
+phím nào). Tìm mục Security hoặc Boot, chuyển Secure Boot sang
+Disabled, lưu và khởi động lại. Muốn bật lại sau này cũng chỉ mất
+chừng đó thao tác.</p>
+
+<p><strong>Thứ hai, về ổ đĩa — chỉ áp dụng khi cài đặt.</strong>
+Trình cài đặt xóa toàn bộ ổ đĩa được chọn. Trước khi bấm cài, hãy
+chắc rằng ổ đĩa đang cắm trong máy là ổ mà dữ liệu trên đó bạn chấp
+nhận mất. Nếu máy có nhiều ổ, cách chắc ăn nhất là tháo hẳn những ổ
+còn lại ra trước khi cài; nếu không tháo được, hãy nhìn kỹ tên và
+dung lượng ổ trong danh sách trước khi xác nhận. Còn nếu bạn chỉ
+dùng thử từ USB thì bỏ qua đoạn này — không có gì bị xóa cả.</p>
+
+<h2>Bước 1: chuẩn bị USB</h2>
+
+<p>Bạn cần một USB từ 16 GB. Dữ liệu trên USB sẽ bị xóa khi ghi,
+nên đừng dùng chiếc đang chứa thứ quan trọng.</p>
+
+<ul>
+  <li>Tải tệp ảnh đĩa (đuôi <code>.bin.xz</code>) từ mục Releases trên
+  trang dự án:
+  <a href="https://github.com/colorburst-os/colorburst">github.com/colorburst-os/colorburst</a>.</li>
+  <li>Ghi tệp đó vào USB. Trên Windows và macOS dùng
+  <a href="https://etcher.balena.io/">balenaEtcher</a> — chọn thẳng tệp
+  <code>.xz</code>, nó tự giải nén. Trên Linux thì
+  <code>unxz</code> rồi <code>dd</code>. Chép tệp vào USB kiểu thông
+  thường là không đủ — phải ghi bằng công cụ.</li>
+</ul>
+
+<h2>Bước 2: khởi động từ USB</h2>
+
+<ul>
+  <li>Tắt Secure Boot như đã nói ở trên, nếu chưa tắt.</li>
+  <li>Cắm USB, bật máy, và chọn khởi động từ USB. Nhiều máy có phím
+  gọi trình đơn khởi động ngay lúc bật (thường là F12, Esc hoặc F9);
+  nếu không, vào phần Boot trong UEFI/BIOS và đưa USB lên đầu.</li>
+  <li>Đợi màn hình chào hiện ra, tạo tài khoản, và dùng thử thoải mái.
+  Mọi thứ chạy từ USB, ổ cứng không bị đụng đến.</li>
+</ul>
+
+<p class="note">Lúc dùng thử, hãy kiểm tra những gì bạn cần hằng ngày:
+Wi-Fi, gõ tiếng Việt, âm thanh, máy in nếu có. Thấy thiếu gì thì chưa
+mất gì cả — tắt máy, rút USB, coi như hai bên chưa từng gặp nhau.</p>
+
+<h2>Bước 3: cài đặt, nếu thấy hợp</h2>
+
+<ul>
+  <li>Sao lưu dữ liệu trên máy trước. Việc cài xóa sạch ổ đĩa
+  được chọn, không có nút hoàn tác.</li>
+  <li>Nếu máy có nhiều ổ đĩa, tháo những ổ không định cài, hoặc
+  chắc chắn tuyệt đối về ổ mình chọn.</li>
+  <li>Khởi động từ USB như khi dùng thử, rồi chọn cài đặt ngay trên
+  màn hình chào. Việc cài mất chừng mươi phút. Xong thì rút USB,
+  khởi động lại, và máy chạy colorburst từ ổ cứng.</li>
+</ul>
+
+<p>Gặp trục trặc ở bước nào, hãy báo trên trang dự án. Mỗi báo lỗi là
+một viên gạch; dự án này xây bằng đúng loại gạch đó.</p>
+
+<footer>
+<p>colorburst là dự án cộng đồng, phân nhánh từ ChromiumOS, giấy phép
+BSD 3 điều khoản. Mã nguồn trên
+<a href="https://github.com/colorburst-os/colorburst">GitHub</a>.</p>
+</footer>
+
+</main>
+</body>
+</html>

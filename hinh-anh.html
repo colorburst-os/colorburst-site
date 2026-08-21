@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hình ảnh — colorburst</title>
+<meta name="description" content="Ảnh chụp màn hình colorburst: giao diện tiếng Việt, gõ Telex, đọc báo, Facebook, Zalo, quản lý đơn hàng trên gian hàng trực tuyến. Chụp từ máy đang chạy thật.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <a class="brand" href="index.html">colorburst</a>
+  <a href="index.html">Trang chủ</a>
+  <a href="dung-thu.html">Dùng thử</a>
+  <a href="so-sanh.html">So sánh</a>
+  <a href="hinh-anh.html" aria-current="page">Hình ảnh</a>
+  <a href="hoi-dap.html">Hỏi đáp</a>
+</nav>
+<main>
+
+<h1>Hình ảnh</h1>
+<p class="subtitle">Ảnh chụp từ hệ thống đang chạy, không dàn dựng.
+Đẹp đến đâu thì máy bạn cũng sẽ đúng đến đó.</p>
+
+<!--
+  Các ảnh dưới đây được tạo bằng tools/capture-screenshots.sh
+  (chạy VM bằng start-vm.sh, rồi chạy script đó và làm theo hướng dẫn).
+  Tên tệp phải khớp đúng như trong src= bên dưới, đặt trong thư mục images/.
+
+  LƯU Ý: kích cỡ chuẩn hiện là 1920x1200 (chạy VM với CB_WINDOW=1920x1200)
+  để ảnh đủ nét và giao diện hiện đầy đủ. Bốn ảnh cũ (man-hinh-chinh,
+  tao-tai-khoan, go-telex, cai-dat) đang là bản 1280x800 nên cần chụp lại;
+  bốn ảnh mới (doc-bao, facebook, zalo, quan-ly-don-hang) chưa có tệp.
+  Chạy lại script để chụp đủ bộ.
+-->
+
+<figure>
+  <img src="images/man-hinh-chinh.png" width="1920" height="1200"
+       alt="Màn hình chính của colorburst, thanh công cụ và đồng hồ bằng tiếng Việt">
+  <figcaption>Màn hình chính. Tiếng Việt là mặc định — bạn không phải
+  đi xin nó ở đâu cả.</figcaption>
+</figure>
+
+<figure>
+  <img src="images/tao-tai-khoan.png" width="1920" height="1200"
+       alt="Màn hình chào lần đầu khởi động, đang tạo tài khoản cục bộ">
+  <figcaption>Lần đầu khởi động: tạo tài khoản ngay trên máy. Không ai
+  đứng giữa bạn và chiếc máy của bạn, kể cả khi mất mạng.</figcaption>
+</figure>
+
+<figure>
+  <img src="images/go-telex.png" width="1920" height="1200"
+       alt="Cửa sổ soạn thảo văn bản đang gõ tiếng Việt kiểu Telex">
+  <figcaption>Gõ Telex, có sẵn từ giây đầu tiên. Bật bằng biểu tượng
+  VI ở góc phải hoặc Ctrl + Space; kiểu gõ chọn trong phần cài đặt
+  bàn phím.</figcaption>
+</figure>
+
+<figure>
+  <img src="images/doc-bao.png" width="1920" height="1200"
+       alt="Trình duyệt đang mở một bài báo trên VnExpress">
+  <figcaption>Đọc báo trên VnExpress. Trang web nào chạy trên trình
+  duyệt thì chạy ở đây — quy luật chỉ có vậy.</figcaption>
+</figure>
+
+<figure>
+  <img src="images/facebook.png" width="1920" height="1200"
+       alt="Trình duyệt đang mở bảng tin Facebook">
+  <figcaption>Facebook chạy trong trình duyệt, như trên mọi máy tính.
+  Chúng tôi cũng chẳng có cách nào làm nó khác đi.</figcaption>
+</figure>
+
+<figure>
+  <img src="images/zalo.png" width="1920" height="1200"
+       alt="Zalo web đang mở một cuộc trò chuyện tiếng Việt">
+  <figcaption>Nhắn tin Zalo qua bản web. Gõ Telex sẵn có, chốt đơn
+  với khách ngay tại đây.</figcaption>
+</figure>
+
+<figure>
+  <img src="images/quan-ly-don-hang.png" width="1920" height="1200"
+       alt="Trang quản lý đơn hàng của kênh người bán Shopee mở trong trình duyệt">
+  <figcaption>Quản lý gian hàng và đơn hàng trực tuyến. Nghề chốt đơn
+  cần chừng này, và chừng này chạy tốt.</figcaption>
+</figure>
+
+<figure>
+  <img src="images/cai-dat.png" width="1920" height="1200"
+       alt="Trang cài đặt hệ thống bằng tiếng Việt">
+  <figcaption>Trang cài đặt. Ít thứ để chỉnh — vì ít thứ để hỏng.
+  Đó là chủ ý.</figcaption>
+</figure>
+
+<footer>
+<p>colorburst là dự án cộng đồng, phân nhánh từ ChromiumOS, giấy phép
+BSD 3 điều khoản. Mã nguồn trên
+<a href="https://github.com/colorburst-os/colorburst">GitHub</a>.</p>
+</footer>
+
+</main>
+</body>
+</html>
