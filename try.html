@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Try colorburst</title>
+<meta name="description" content="Run colorburst from a USB stick without touching your disk, then install it if it suits you.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <a class="brand" href="index.html">colorburst</a>
+  <a href="index.html">Home</a>
+  <a href="try.html" aria-current="page">Try it</a>
+  <a href="compare.html">Compare</a>
+  <a href="screenshots.html">Screenshots</a>
+  <a href="faq.html">FAQ</a>
+  <a class="lang" href="vi/index.html">Tiếng Việt</a>
+</nav>
+<main>
+
+<h1>Try it</h1>
+<p class="subtitle">Run it from a USB stick first. Nothing on the machine
+changes.</p>
+
+<p>Two separate things, worth keeping separate. <strong>Trying</strong> means
+booting from a USB stick: colorburst runs off the stick, the internal disk is
+untouched, and pulling the stick out leaves the machine as it was.
+<strong>Installing</strong> comes later, if it suits you: it erases the disk
+you choose.</p>
+
+<h2>Two things to know first</h2>
+
+<p><strong>Secure Boot.</strong> Most machines refuse to boot from a USB stick
+until you turn Secure Boot off in UEFI/BIOS. Nothing is broken; that is normal
+for any operating system that is not Windows. Press F2, F10 or Del as the
+machine powers on, find Security or Boot, set Secure Boot to Disabled, save.
+Turning it back on later is the same few steps.</p>
+
+<p><strong>The installer erases the disk</strong> — this applies only if you
+install. If the machine has more than one disk, the safe thing is to unplug the
+others first. If you are only trying from USB, nothing is erased.</p>
+
+<h2>Step 1: write the USB stick</h2>
+
+<p>You need a stick of 16 GB or more. Writing erases it.</p>
+
+<ul>
+  <li>Download <code>colorburst-&lt;version&gt;.zip</code> from
+  <a href="https://github.com/colorburst-os/colorburst/releases">Releases</a>.</li>
+  <li>Write it to the stick. On Windows and macOS use
+  <a href="https://etcher.balena.io/">balenaEtcher</a>, which accepts the
+  <code>.zip</code> directly. On Linux, <code>unzip</code> then
+  <code>dd</code>. Copying the file onto the stick is not enough — it has to be
+  written with a tool.</li>
+</ul>
+
+<h2>Step 2: boot from it</h2>
+
+<ul>
+  <li>Turn Secure Boot off, if you have not.</li>
+  <li>Plug the stick in, power on, and choose to boot from it. Many machines
+  have a boot-menu key at power-on (F12, Esc or F9); otherwise put the stick
+  first in the Boot section of UEFI/BIOS.</li>
+  <li>Wait for the welcome screen, create an account, and use it. Everything
+  runs from the stick.</li>
+</ul>
+
+<p>While you are trying it, check the things you actually need: Wi-Fi, sound,
+a printer if you use one. If something is missing, you have lost nothing —
+shut down and pull the stick out.</p>
+
+<h2>Step 3: install, if it suits you</h2>
+
+<ul>
+  <li>Back up the machine first. Installing erases the disk you choose, and
+  there is no undo.</li>
+  <li>If the machine has several disks, unplug the ones you are not installing
+  to.</li>
+  <li>Boot from the stick as before and choose to install on the welcome
+  screen. It takes about ten minutes. Then pull the stick out and restart.</li>
+</ul>
+
+<p>If something goes wrong at any step, please
+<a href="https://github.com/colorburst-os/colorburst/issues">report it</a>.</p>
+
+</main>
+</body>
+</html>

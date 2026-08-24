@@ -120,3 +120,6 @@ footer {
   color: var(--muted);
   font-size: 0.9rem;
 }
+
+/* Language switcher: pushed to the far end of the nav. */
+nav a.lang { margin-left: auto; }

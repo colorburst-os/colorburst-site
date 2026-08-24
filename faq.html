@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>colorburst FAQ</title>
+<meta name="description" content="Will it run on my machine, what it cannot do, who made it, and how the project is funded.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <a class="brand" href="index.html">colorburst</a>
+  <a href="index.html">Home</a>
+  <a href="try.html">Try it</a>
+  <a href="compare.html">Compare</a>
+  <a href="screenshots.html">Screenshots</a>
+  <a href="faq.html" aria-current="page">FAQ</a>
+  <a class="lang" href="vi/index.html">Tiếng Việt</a>
+</nav>
+<main>
+
+<h1>FAQ</h1>
+
+<h2>Will it run on my machine?</h2>
+
+<p>Most 64-bit desktops and laptops from roughly the last ten years. The way to
+find out is to <a href="try.html">boot it from a USB stick</a> — that changes
+nothing on the machine.</p>
+
+<h2>What about documents and spreadsheets?</h2>
+
+<p>Through the browser: Google Docs, Microsoft 365 for the web, or any other
+web office. Desktop Office does not run. If you depend on a specific installed
+program, this is not the machine for it.</p>
+
+<h2>Can I still use Gmail, YouTube, Drive?</h2>
+
+<p>Yes. They are websites and they work normally. What is absent is the
+requirement to sign in to the operating system with a Google account.</p>
+
+<h2>Why not just install Linux?</h2>
+
+<p>You should, if you want a Linux desktop. colorburst is aimed at the machine
+you set up for somebody else and would rather not maintain: less to configure,
+less to break, and it resets to a clean state in minutes.</p>
+
+<p>If you want Linux as well, it is built in — a Debian container you turn on
+in Settings. See the <a href="screenshots.html">screenshots</a>.</p>
+
+<h2>Can I go back to Windows?</h2>
+
+<p>Yes, by reinstalling Windows from a Windows USB stick. Installing colorburst
+erases the disk, so back up first, and keep your Windows licence key.</p>
+
+<h2>Is this just ChromeOS renamed?</h2>
+
+<p>No. It is built from ChromiumOS, the open-source code Google publishes.
+ChromeOS adds Google's closed parts on top of that; colorburst does not, and
+adds local accounts and its own update server instead. It is not affiliated
+with Google.</p>
+
+<h2>How much of this was written by AI?</h2>
+
+<p>A lot of the code. One person cannot build an operating system otherwise.
+Every design decision is made and reviewed by an experienced engineer, and AI
+also makes it cheap to build the tooling that tests the result. Once things
+have settled, the intention is to review the whole thing by hand.</p>
+
+<h2>How does the project make money?</h2>
+
+<p>It does not. Current funding: my own salary. If it becomes useful to enough
+people, there may be a way to make it sustainable; there is no plan that
+depends on it.</p>
+
+<h2>How long will it last?</h2>
+
+<p>Unknown, which is the honest answer for any project this young. It is open
+source under a BSD licence, so if it stops, the code and the build tooling stay
+available for anyone to continue.</p>
+
+<h2>Who made this?</h2>
+
+<p>One engineer, working under a pseudonym for professional reasons. The
+guiding principle is that you should not trust anyone for who they say they
+are. The source is small and public: read it, build it, and check the claims
+on this site for yourself.</p>
+
+<h2>Origin and licence</h2>
+
+<p>colorburst is a fork of ChromiumOS. The original code belongs to the
+ChromiumOS authors under the BSD 3-clause licence; other components keep their
+own. "Chrome", "ChromeOS" and "Chromebook" are Google trademarks.</p>
+
+<p>Source: <a href="https://github.com/colorburst-os">github.com/colorburst-os</a></p>
+
+<h2>About the name</h2>
+
+<p>On analogue colour television, every scan line opens with a short burst of
+signal — a few cycles of the colour subcarrier. It carries no picture. Its only
+job is to give the receiver a phase reference. Without it the picture still
+appears, but the colours are wrong.</p>
+
+<p>A small repeated reference, so that everything else comes out right.</p>
+
+<h2>Where the project is</h2>
+
+<p>Early. It installs, updates and runs, and it is used daily on real hardware.
+Parts of the interface still say "Chromium", DRM video does not play, there is
+no hardware video decode, and there is no password recovery.</p>
+
+</main>
+</body>
+</html>
